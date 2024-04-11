@@ -70,7 +70,7 @@ const Login = ({ form, updateFormAction, userLoginAction, isAuth, isPending, err
               <CardBody className="p-4 m-1">
                 <div className="text-center">
                   <CardTitle tag="h4" className="mt-2">
-                    VW -  Login
+                    Visionware -  Login
                   </CardTitle>
                 </div>
                 {errorMessage && (
