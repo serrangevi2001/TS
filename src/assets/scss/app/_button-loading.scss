@@ -1,0 +1,69 @@
+.btn {
+    position: relative;
+}
+
+.btn-loading {
+    pointer-events: none;
+}
+
+.btn-loading>em,
+.btn-loading>em::before,
+.btn-loading>em::after {
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    border-radius: 50%;
+    height: 8px;
+    position: absolute;
+    width: 8px;
+}
+
+.btn-loading>em {
+    animation-delay: .5s;
+    display: block;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn-loading>em::before,
+.btn-loading>em::after {
+    content: '';
+    top: 0;
+}
+
+.btn-loading>em::before {
+    animation-delay: 0s;
+    left: -16px;
+}
+
+.btn-loading>em::after {
+    animation-delay: 1s;
+    left: 16px;
+}
+
+.btn-loading>span,
+.btn-loading>i {
+    visibility: hidden;
+}
+
+@keyframes btn-loading-animation {
+    0% {
+        background: rgba(white, .25);
+    }
+
+    50% {
+        background: rgba(white, 1);
+    }
+
+    90% {
+        background: rgba(white, .25);
+    }
+}
+
+.btn-loading>em,
+.btn-loading>em::before,
+.btn-loading>em::after {
+    animation-name: btn-loading-animation;
+    background: rgba(white, .25);
+}

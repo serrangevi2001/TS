@@ -1,0 +1,64 @@
+.form-unstyled-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.form-status-list {
+    border-radius: 30px;
+}
+
+.form-status-list-disabled {
+    opacity: .5;
+    pointer-events: none;
+}
+
+.form-status-item {
+    border-radius: 30px;
+    border: 1px solid #dedee3;
+    color: #6f6f8c;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 700;
+    line-height: 1;
+    min-width: 40px * 2 + 16px;
+    padding-bottom: (8px + 3px);
+    padding-top: (8px + 3px);
+    text-align: center;
+    transition: background-color .3s;
+    vertical-align: middle;
+}
+
+.form-status-item:first-child {
+    margin-right: -40px;
+    padding-left: 16px;
+    padding-right: 16px * 3;
+}
+
+.form-status-item.active:first-child {
+    padding-right: 16px;
+}
+
+.form-status-item:last-child {
+    margin-left: -40px;
+    padding-left: 32px * 2;
+    padding-right: 32px;
+}
+
+.form-status-item.active:last-child {
+    background-color: #0bb7af;
+    color: #ffffff;
+    padding-left: 32px;
+}
+
+.form-status-item:hover {
+    background-color: #f7f7fa;
+}
+
+.form-status-item.active {
+    background-color: #dedee3;
+    box-shadow: 0 2px 5px 0 rgba(#32325d, .15);
+    color: #32325d;
+    margin: 0;
+    position: relative;
+}

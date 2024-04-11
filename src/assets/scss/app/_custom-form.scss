@@ -1,0 +1,9 @@
+.form-group {
+    .input-group {
+        &.date {
+            .input-group-text {
+                padding: 0.65rem 0.75rem
+            }
+        }
+    }
+}

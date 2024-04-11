@@ -1,0 +1,115 @@
+// _skeleton.scss
+
+// skeleton
+// skeleton-circle
+// skeleton-circle-size
+// skeleton-calendar
+// skeleton-line
+// skeleton-line-size
+// skeleton-animation
+
+
+// skeleton
+.skeleton {
+    overflow: hidden;
+    position: relative;
+}
+
+
+// skeleton-circle
+.skeleton-circle {
+    animation: skeleton-animation 2s linear infinite;
+    background: linear-gradient(90deg, rgba(#000, 0) 0, rgba(#000, 0) 30%, rgba(#000, .04) 50%, rgba(#000, 0) 70%, rgba(#000, 0) 100%), #f7f7fa;
+    background-size: 200% 200%;
+    border-radius: 100%;
+}
+
+
+// skeleton-circle-size
+.skeleton-circle-medium {
+    height: (16px * 2);
+    width: (16px * 2);
+}
+
+.skeleton-circle-small {
+    height: 24px;
+    width: 24px;
+}
+
+
+// skeleton-calendar
+.skeleton-calendar {
+    animation: skeleton-animation 2s linear infinite;
+    background: linear-gradient(90deg, rgba(#000, 0) 0, rgba(#000, 0) 30%, rgba(#000, .04) 50%, rgba(#000, 0) 70%, rgba(#000, 0) 100%), #f7f7fa;
+    background-size: 200% 200%;
+    border-radius: 12px;
+    height: 80px;
+    width: 80px;
+}
+
+
+// skeleton-line
+.skeleton-line {
+    animation: skeleton-animation 2s linear infinite;
+    background: linear-gradient(90deg, rgba(#000, 0) 0, rgba(#000, 0) 30%, rgba(#000, .04) 50%, rgba(#000, 0) 70%, rgba(#000, 0) 100%), #f7f7fa;
+    background-size: 200% 200%;
+    border-radius: 6px;
+    height: 8px;
+}
+
+.skeleton-line+.skeleton-line {
+    margin-top: 16px;
+}
+
+
+// skeleton-line-size
+.skeleton-line-10 {
+    width: 10%;
+}
+
+.skeleton-line-20 {
+    width: 20%;
+}
+
+.skeleton-line-30 {
+    width: 30%;
+}
+
+.skeleton-line-40 {
+    width: 40%;
+}
+
+.skeleton-line-50 {
+    width: 50%;
+}
+
+.skeleton-line-60 {
+    width: 60%;
+}
+
+.skeleton-line-70 {
+    width: 70%;
+}
+
+.skeleton-line-80 {
+    width: 80%;
+}
+
+.skeleton-line-90 {
+    width: 90%;
+}
+
+.skeleton-line-100 {
+    width: 100%;
+}
+
+// skeleton-animation
+@keyframes skeleton-animation {
+    0% {
+        background-position: 200% 0;
+    }
+
+    100% {
+        background-position: -200% 0;
+    }
+}

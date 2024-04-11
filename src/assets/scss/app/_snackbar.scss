@@ -1,0 +1,128 @@
+// _snackbar.scss
+
+// snackbar
+// snackbar-close
+// screen-medium
+// screen-medium:snackbar
+// screen-large
+// screen-large:snackbar-close
+
+// snackbar
+.snackbar {
+  background: #666674;
+  border-radius: 6px;
+  box-sizing: border-box;
+  left: 50%;
+  padding: 16px 24px;
+  position: fixed;
+  transform: translate(-50%, 0);
+  width: calc(100% - 16px * 2);
+  z-index: 9999;
+}
+
+.snackbar p,
+.snackbar a {
+  font-size: 16px;
+  line-height: round(16px * 1.5);
+  margin-bottom: 0px;
+}
+
+.snackbar p {
+  color: #ffffff;
+}
+
+// snackbar-close
+.snackbar-close {
+  position: absolute;
+  right: 4px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.snackbar-close ~ div {
+  padding-right: 24px;
+}
+
+.snackbar-close a svg * {
+  fill: #f7f7fa;
+}
+
+// screen-medium
+@media (min-width: 768px) {
+
+  // screen-medium:snackbar
+  .snackbar {
+    max-width: (400px * 2);
+    width: auto;
+  }
+}
+
+// bottom
+.snackbar-bottom {
+  bottom: -(400px / 2);
+  transition: bottom .5s ease-in-out;
+}
+
+// snackbar-bottom:snackbar-visible
+.snackbar-bottom.snackbar-visible {
+  bottom: 16px;
+}
+
+// snackbar-top
+.snackbar-top {
+  top: -(400px / 2);
+  transition: top .5s ease-in-out;
+}
+
+// snackbar-top:snackbar-visible
+.snackbar-top.snackbar-visible {
+  top: 16px;
+}
+
+//block
+// snackbar-block:snackbar-actions
+.snackbar-block .snackbar-actions {
+  margin-top: 16px;
+}
+
+.snackbar-block .snackbar-actions a + a {
+  margin-left: 16px;
+}
+
+.snackbar-inline {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.snackbar-inline > div {
+  width: 100%;
+}
+
+// snackbar-inline:snackbar-actions
+.snackbar-inline .snackbar-actions {
+  margin-top: 16px;
+}
+
+.snackbar-inline .snackbar-actions a + a {
+  margin-left: 16px;
+}
+
+// screen-medium
+@media (min-width: 768px) {
+
+  // screen-medium:snackbar-inline
+  .snackbar-inline > div {
+    width: auto;
+  }
+  // screen-medium:snackbar-inline:snackbar-content
+  .snackbar-inline .snackbar-content {
+    flex: 1;
+  }
+
+  // screen-medium:snackbar-inline:snackbar-actions
+  .snackbar-inline .snackbar-actions {
+    margin-left: 16px;
+    margin-top: 0;
+  }
+}

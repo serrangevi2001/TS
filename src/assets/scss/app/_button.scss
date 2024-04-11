@@ -1,0 +1,6 @@
+a {
+    &.disabled {
+        pointer-events: none;
+        color: rgba($gray-dark, 0.8);
+    }
+}

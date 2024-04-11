@@ -1,0 +1,34 @@
+.pagination {
+    margin-top: 16px;
+}
+
+.page-link {
+    color: $pagination-color;
+    background-color: $pagination-bg;
+
+    &:hover {
+        z-index: 2;
+        color: $pagination-hover-color;
+        text-decoration: none;
+        background-color: $pagination-hover-bg;
+        border-color: $pagination-hover-border-color;
+    }
+}
+
+.page-item {
+    &.active .page-link {
+        z-index: 3;
+        color: $pagination-active-color;
+        background-color: $pagination-active-bg;
+        border-color: $pagination-active-border-color;
+    }
+
+    &.disabled .page-link {
+        color: $pagination-disabled-color;
+        pointer-events: none;
+        // Opinionated: remove the "hand" cursor set previously for .page-link
+        cursor: auto;
+        background-color: $pagination-disabled-bg;
+        border-color: $pagination-disabled-border-color;
+    }
+}
